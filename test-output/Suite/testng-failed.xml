@@ -5,8 +5,8 @@
     <classes>
       <class name="com.rapido.test.RapidoAutomation.ValidateAmazonTest">
         <methods>
-          <include name="afterSuite"/>
-          <include name="beforesuite"/>
+          <include name="besuite"/>
+          <include name="afSuite"/>
           <include name="testAmazon"/>
           <include name="tearDown"/>
         </methods>

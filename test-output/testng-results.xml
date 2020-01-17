@@ -1,88 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18" started-at="2020-01-16T17:15:30Z" finished-at="2020-01-16T17:15:30Z">
+  <suite name="Suite" duration-ms="8469" started-at="2020-01-17T07:43:33Z" finished-at="2020-01-17T07:43:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18" started-at="2020-01-16T17:15:30Z" finished-at="2020-01-16T17:15:30Z">
+    <test name="Test" duration-ms="8469" started-at="2020-01-17T07:43:33Z" finished-at="2020-01-17T07:43:41Z">
       <class name="com.rapido.test.RapidoAutomation.ValidateAmazonTest">
-        <test-method status="FAIL" signature="beforesuite(org.testng.ITestResult)[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@7a765367]" name="beforesuite" is-config="true" duration-ms="0" started-at="2020-01-16T17:15:30Z" finished-at="2020-01-16T17:15:30Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforesuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforesuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="besuite()[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@4b553d26]" name="besuite" is-config="true" duration-ms="7" started-at="2020-01-17T07:43:33Z" finished-at="2020-01-17T07:43:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method status="SKIP" signature="testAmazon()[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@7a765367]" name="testAmazon" duration-ms="0" started-at="2020-01-16T17:15:30Z" finished-at="2020-01-16T17:15:30Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforesuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @BeforeSuite annotated beforesuite.
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- besuite -->
+        <test-method status="PASS" signature="testAmazon()[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@4b553d26]" name="testAmazon" duration-ms="7831" started-at="2020-01-17T07:43:33Z" finished-at="2020-01-17T07:43:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAmazon -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@7a765367]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-16T17:15:30Z" finished-at="2020-01-16T17:15:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@4b553d26]" name="tearDown" is-config="true" duration-ms="445" started-at="2020-01-17T07:43:41Z" finished-at="2020-01-17T07:43:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="afterSuite(org.testng.ITestResult)[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@7a765367]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-01-16T17:15:31Z" finished-at="2020-01-16T17:15:31Z">
+        <test-method status="PASS" signature="afSuite()[pri:0, instance:com.rapido.test.RapidoAutomation.ValidateAmazonTest@4b553d26]" name="afSuite" is-config="true" duration-ms="1" started-at="2020-01-17T07:43:42Z" finished-at="2020-01-17T07:43:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
+        </test-method> <!-- afSuite -->
       </class> <!-- com.rapido.test.RapidoAutomation.ValidateAmazonTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

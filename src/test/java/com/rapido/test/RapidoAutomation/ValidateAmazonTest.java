@@ -21,12 +21,13 @@ import com.relevantcodes.extentreports.LogStatus;
 public class ValidateAmazonTest extends Apploader  {
 	WebDriver driver;
 	
+	
+	
 	@Test
 	public void testAmazon() {
-		
 		BasePage base = new BasePage(driver);
 		driver = base.launchBrowser();
-		
+		//test.log(LogStatus.INFO, "Successfukky");
 		
 		HomePage home = new HomePage(driver);
 		home.enter_ItemsDetails().clickon_Search();
@@ -39,7 +40,6 @@ public class ValidateAmazonTest extends Apploader  {
 	
 	@AfterMethod
 	public void tearDown() {
-		
 		driver.close();
 	}
 	

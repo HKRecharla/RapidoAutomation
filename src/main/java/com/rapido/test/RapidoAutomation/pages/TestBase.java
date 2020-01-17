@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.rapido.test.RapidoAutomation.load.ExtentManager;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -26,16 +27,21 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class TestBase  {
 	
-	
+//	protected ExtentReports extent;
+//    protected ExtentTest test;
+//    
+//    final String filePath = "./Extent.html";
 	@BeforeSuite
-	public void beforesuite(ITestResult result) {
+	public void besuite() {
+		//extent = ExtentManager.getReporter(filePath);
 		
 	}
 	
 	
 	@AfterSuite 
-	public void afterSuite(ITestResult result) {
-		
+	public void afSuite() {
+//		extent.flush();
+//		extent.close();
 	
 	}
 

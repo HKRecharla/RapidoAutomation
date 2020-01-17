@@ -16,6 +16,9 @@ import org.openqa.selenium.support.PageFactory;
 import com.rapido.test.RapidoAutomation.BasePage;
 import com.rapido.test.RapidoAutomation.WebPojo;
 import com.rapido.test.RapidoAutomation.WebProducts;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * @author Harikrishna Recharla
@@ -23,8 +26,6 @@ import com.rapido.test.RapidoAutomation.WebProducts;
  */
 
 public class HomePage extends BasePage{
-
-	
 	public HomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
@@ -46,7 +47,6 @@ public class HomePage extends BasePage{
 	
 	
 	public HomePage enter_ItemsDetails() {
-		
 		//waitUntilElementClickable(search_BAR);
 		driver.getCurrentUrl();
 		search_BAR.click();

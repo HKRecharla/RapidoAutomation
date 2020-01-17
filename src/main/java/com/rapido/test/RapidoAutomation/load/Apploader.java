@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * @author Harikrishna Recharla
@@ -19,13 +20,13 @@ public class Apploader {
 	
 
 	@BeforeSuite
-	public void beforesuite(ITestResult result) {
-		
+	public void besuite(ITestResult result) {
+		test.log(LogStatus.INFO, "Successfukky launched browser");
 	}
 	
 	
 	@AfterSuite 
-	public void afterSuite(ITestResult result) {
+	public void afSuite(ITestResult result) {
 		
 	
 	}
