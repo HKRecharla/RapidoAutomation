@@ -15,6 +15,7 @@ import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestNGListener;
 import org.testng.ITestResult;
 import org.testng.internal.IResultListener;
 import org.testng.log4testng.Logger;
@@ -29,7 +30,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 
 @SuppressWarnings("unused")
-public class ReportUtils extends Apploader implements ITestListener{
+public class ReportUtils extends Apploader implements ITestListener,WebDriverEventListener{
 
 	
 	@Override
@@ -89,6 +90,132 @@ public class ReportUtils extends Apploader implements ITestListener{
 		report.endTest(test);
 		report.flush();
 		
+		
+	}
+
+	@Override
+	public void beforeAlertAccept(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterAlertAccept(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterAlertDismiss(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeAlertDismiss(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeNavigateTo(String url, WebDriver driver) {
+		test.log(LogStatus.PASS, "Launchig URL");
+		
+	}
+
+	@Override
+	public void afterNavigateTo(String url, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeNavigateBack(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterNavigateBack(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeNavigateForward(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterNavigateForward(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeNavigateRefresh(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterNavigateRefresh(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterFindBy(By by, WebElement element, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeClickOn(WebElement element, WebDriver driver) {
+		test.log(LogStatus.INFO, "Clciking on Element"+element.getTagName());
+		
+	}
+
+	@Override
+	public void afterClickOn(WebElement element, WebDriver driver) {
+		
+		
+	}
+
+	@Override
+	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beforeScript(String script, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void afterScript(String script, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onException(Throwable throwable, WebDriver driver) {
+		// TODO Auto-generated method stub
 		
 	}
 
